@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+header{
+    background-color: rgb(190, 21, 21);
+    padding: 10px 3% 40px 3%;
+}
+/*divs gerais*/
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+/************************************************************************/
+
+.logo-1{
+    float: left;
+    width: 80px;
+    height: 70px;
+    background-image: url(../imagens/html.png);
+    background-size: 80px 70px;
+
+}
+
+.logo-2{
+    float: right;
+    width: 60px;
+    height: 70px;
+    background-image: url(../imagens/css-3-logo-5.png);
+    background-size: 60px 70px;
+}
+
+.logo-3{
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 70px;
+    background-image: url(../imagens/js.png);
+    background-size: 80px 70px;
+}
+
+section.cover-form{
+    width: 100%;
+}
+
+.bg{
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../imagens/banner.jpg);
+    position: relative;
+}
+
+.form-container{
+    width: 399px;
+    height: 110%;
+    position: absolute;
+    right: 30px;
+    top: -5%;
+    /*height serve para o form ultrapassar os limites do container*/
+    margin-right: 39px;
+    box-shadow: 0px 10px 13px -7px #000000;
+    background-color: rgba(233, 71, 30, 0.411);
+}
+.form-container h2{
+    padding: 20px;
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: rgba(223, 18, 3, 0.678);
+}
+
+.form-container form{
+    margin-top: 8px;
+    padding: 20px;
+}
+
+.form-container form p{
+    font-size: 19px;
+    color: rgb(158, 151, 151);
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 35px;
+}
+
+.form-wraper:last-child{
+    margin-top: 22px;
+}
+
+.form-container form input[type=text]{
+    width: 100%;
+    border: black 1px solid;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form input[type=submit]{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 26px;
+    cursor: pointer;
+    border: none;
+
+}
+.form-container form input[type=submit]:hover{
+    border: 1px solid black;
+}
+
+section.chamada{
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+section.chamada .container{
+    background-color: orange;
+    padding: 40px 0;
+}
+
+section.chamada h2{
+    width: 98%;
+    max-width: 600px;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+section.chamada p{
+    width: 98%;
+    max-width: 600px;
+    font-size: 20px;
+    display: inline-block;
+    text-align:center ;
+}
+
+.flex-mosaico{
+    display: flex;
+}
+
+.item-a1-mosaico{
+    width: 60%;
+    background-position: center;
+    background-size: cover;
+}
+.item-a2-mosaico{
+    width: 40%;
+    padding: 25px 15px;
+}
+.item-a2-mosaico p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cont{
+    width: 100%;
+    padding: 30px 0;
+    background-color: rgb(185, 16, 16);
+}
+.social{
+    display:flex;
+    justify-content: center;
+}
+
+.social-1{
+    width: 40px;
+    background-image: url(../imagens/insta-footer.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+.social-2{
+    width: 40px;
+    background-image: url(../imagens/face-footer.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+.social-3{
+    width: 50px;
+    height: 50px;
+    background-image: url(../imagens/yt-footer.png);
+    background-size: 50px 50px;
+}
+
+.regras{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.regras p{
+    color: white;
+    font-weight:600;
+}
+
+.regras .direitos{
+    margin-top: 10px;
+    font-size: 15px;
+    color: gray;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 960px){
+    .bg{
+        text-align: center;
+    }
+
+    .form-container{
+        width: 96%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+        height: 105%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 510px){
+    header{
+        text-align: center;
+    }
+    
+    /*todas as classes que começam com "logo" aplique as alterações*/
+    [class^="logo"]{
+        float: none;
+        display: inline-block;
+    }
+
+    .form-container{
+        position: absolute;
+        right: 0px;
+    }
+
+}
+
+@media screen and (max-width:1300px){
+    .item-a1-mosaico{
+        width: 55%;
+    }
+    .item-a2-mosaico{
+        width: 45%;
+        padding: 10px ;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item-a1-mosaico{
+        width: 100%;
+    }
+
+    .item-a2-mosaico{
+        width: 100%;
+        background-color: rgba(216, 214, 211, 0.534);
+    }
+
+}

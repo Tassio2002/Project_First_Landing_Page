@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <meta name="descripition" content="conteudo do site">
+    <meta name="keywords" content="palavras, chave, separadas, por virgula">
+    <meta name="author" content="Tassio dos Santos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Landing page</title>
+</head>
+<body>
+    <!--cabeçalho do site-->
+    <header>
+        <div class="container">
+            <div><div class="logo-1"></div><!--logo-1--></div>
+            <div></div><div class="logo-2"></div><!--logo-2--></div>
+            <div></div><div class="logo-3"></div><!--logo-2--></div>
+            <div class="clear"></div>
+        </div><!--container-->
+    </header>
+
+    <!--seção banner e formulario de contato-->
+    <section class="cover-form">
+        <div class="container bg">
+            <div class="form-container">
+                <h2>INSIRA SEUS DADOS PARA RECEBER CONTEUDO EXCLUSIVO</h2>
+                <form>
+                    <div class="form-wraper">
+                        <p>Nome completo*</p>
+                        <input type="text" name="nome" placeholder="Nome" required> 
+                    </div><!--form-wraper-->
+                    <div class="form-wraper">
+                        <p>E-mail*</p>
+                        <input type="text" name="E-mail" placeholder="E-mail" required> 
+                    </div><!--form-wraper-->
+                    <div class="form-wraper">
+                        <p>Telefone*</p>
+                        <input type="text" name="nome" placeholder="Telefone" required> 
+                    </div><!--form-wraper-->
+                    <div class="form-wraper">
+                        <input type="submit" name="acao" value="enviar">
+                    </div><!--form-wraper-->
+                    <div class="form-wraper">
+                        <p>* Campos obrigatorios</p>
+                    </div><!--form-wraper-->
+                </form>
+            </div><!--form-container-->
+        </div><!--container-bg-->
+    </section><!--cover-form-->
+
+    <!--seção de chamada-->
+    <section class="chamada">
+        <div class="container">
+            <div><h2>HTML E CSS E JAVASCRIPT</h2></div>
+            <div><p>As três principais tecnologias para o desenvolvimento de paginas web.</p></div>
+        </div><!--container-->
+    </section><!--chamada-->
+
+    <!--seção de galeria-->
+    <section class="mosaico">
+        <div class="container">
+            <div class="flex-mosaico">
+                <div style="background-image:url('imagens/html-mos.png');height: 400px;box-shadow:6px 6px 14px 6px rgba(130, 110, 115, 0.61);" class="item-a1-mosaico">
+                </div><!--item-a1-mosaico-->
+                <div class="item-a2-mosaico">
+                    <p>
+                        <strong>HTML</strong> significa<strong> Hypertext Markup Language</strong>.
+                        Ele permite que os usuários criem e estruturem seções,
+                        parágrafos, cabeçalhos e links para páginas
+                        da internet ou aplicações.<br><br>
+                        O HTML não é uma linguagem de programação,
+                        isso significa que
+                        não pode ser usado para criar funcionalidades
+                        dinâmicas. Entretanto, o HTML possibilita a
+                        organização e formatação de documentos,
+                        similar ao Microsoft Word.<br><br>
+                        Ao trabalhar com HTML
+                        simplesmente codificamos estruturas (tags e atributos)
+                        para marcar a página de um site. Por exemplo, podemos
+                        criar um parágrafo colocando o texto entre as tags
+                    </p>
+                </div><!--item-a2-mosaico-->
+            </div><!--flex-mosaico-->
+
+            <div class="flex-mosaico">
+                <div style="background-image:url('imagens/css-mos.png');height: 400px;box-shadow:6px 6px 14px 6px rgba(130, 110, 115, 0.61);order: 2;" class="item-a1-mosaico">
+                </div><!--item-a1-mosaico-->
+                <div style="order: 1;" class="item-a2-mosaico">
+                    <p>
+                        <strong>CSS</strong> é a sigla para o termo em inglês
+                        <strong>Cascading Style Sheets</strong> que,
+                        traduzido para o português, significa Folha de Estilo em Cascatas.
+                        O CSS é fácil de aprender e entender e é facilmente utilizado com
+                        as linguagens de marcação HTML ou XHTML.<br><br>
+
+                        O CSS separa o conteúdo da representação visual do site.
+                        Pense  na decoração da sua página. Utilizando o CSS
+                        é possível alterar a cor do texto e do fundo, fonte e espaçamento
+                        entre parágrafos. Também pode criar tabelas, usar variações de layouts
+                        , ajustar imagens para suas respectivas telas e assim por diante.
+                    </p>
+                </div><!--item-a2-mosaico-->
+            </div><!--flex-mosaico-->
+
+            <div class="flex-mosaico">
+                <div style="background-image:url('imagens/javascript-mos.jpg');height: 400px;box-shadow:6px 6px 14px 6px rgba(130, 110, 115, 0.61);" class="item-a1-mosaico">
+                </div><!--item-a1-mosaico-->
+                <div  class="item-a2-mosaico">
+                    <p>
+                        Não importa se você está começando sua jornada no mundo
+                        da programação agora ou já tem experiência com outras linguagens.
+                        Você provavelmente já ouviu falar sobre <strong>Javascript</strong>.<br><br>
+
+                        Esta que é uma das principais linguagens de programação oferece
+                        uma variedade muito grande de frameworks e aplicações para os mais
+                        diversos dispositivos. E, quem domina o Javascript, acaba se tornando
+                        um programador muito versátil.<br><br>
+
+                        Neste artigo, vamos falar sobre o que é Javascript e a história por trás
+                        de seu desenvolvimento. Também vamos abordar suas principais aplicações
+                        e funcionalidades. Tudo isso com o intuito de dar a você a base necessária
+                        para dominar o Javascript!
+                    </p>
+                </div><!--item-a2-mosaico-->
+            </div><!--flex-mosaico-->
+
+            <div class="flex-mosaico">
+                <div style="background-image:url('imagens/frameworks-mos.png');height: 400px;box-shadow:6px 6px 14px 0px rgba(130, 110, 115, 0.61);order: 2;" class="item-a1-mosaico">
+                </div><!--item-a1-mosaico-->
+                <div style="order: 1;"  class="item-a2-mosaico">
+                    <p>
+                        Framework é, de forma básica, um facilitador.<br><br>
+
+                        Ele traz diversas <strong>soluções</strong> já pré-definidas,
+                        que descomplicam o trabalho dos profissionais no desenvolvimento
+                        de aplicativos e outros projetos digitais.<br><br>
+
+                        Como os frameworks representam um conjunto de códigos prontos,
+                        que podem ser replicados para a criação de funções que aparecem
+                        com frequência no desenvolvimento de um projeto digital, eles poupam
+                        tempo e permitem elevar a <strong>produtividade</strong>.
+                    </p>
+                </div><!--item-a2-mosaico-->
+            </div><!--flex-mosaico-->
+        </div><!--container-->
+    </section>
+
+    <!--rodape do site-->
+    <footer>
+        <div class="container">
+            <div class="cont">
+                <div class="social">
+                    <div class="social-1"></div>
+                    <div class="social-2"></div>
+                    <div class="social-3"></div>
+                </div><!--social-->
+                <div class="regras">
+                    <p>Politica de privacidade - Termos de uso - fale conosco</p>
+                    <p class="direitos">todos os direitos reservados a TekDesign</p>
+                </div><!--regras-->
+            </div><!--cont-->
+        </div><!--container-->
+    </footer>
+</body>
+</html>
